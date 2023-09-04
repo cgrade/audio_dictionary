@@ -1,0 +1,4 @@
+GPT_KEY = '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'
+org_key = 'org-qymA1FIrnQJDy4L74JZyiyiM'
+
+API_KEY = 'a3c78564d2d43ba18cb1f3391835b6d33171e583'
