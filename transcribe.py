@@ -1,9 +1,8 @@
 from deepgram import Deepgram
 import asyncio
-from record_audio import record_stream  # Assuming you have a func.py module with the record_audio function
-from keys import API_KEY
+from record_audio import record_stream
 
-API_KEY = API_KEY
+API_KEY = $API_KEY
 MIMETYPE = 'audio/wav'
 
 
