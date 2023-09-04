@@ -8,3 +8,6 @@ activate virtual environment or better still create a virtual environment with t
 
 ### install requirements
 install requirements.txt with `pip install -r requirements.txt`
+
+### Get API keys from OpenAI completion API and Deepgram API
+Replace the keys with the appropriate keys
