@@ -12,18 +12,20 @@ import tempfile
 import typing
 
 
-def record_stream(duration: int=10, output_file: typing.Any=None) -> typing.Any:
-    """ A func that records voice from the microphone of the pc using pyaudio package
+def record_stream(duration: int = 10,
+                  output_file: typing.Any = None) -> typing.Any:
+    """ A func that records voice from the microphone of the pc
+        using pyaudio package
         Params:
-            duration: this is the max time for streaming
-            outpufile: This is the `.wav file` that contains the recoreded audio
+            @duration: this is the max time for streaming
+            @outpufile: This is the `.wav file` that
+            contains the recoreded audio
     """
     CHUNK = 1024
     FORMAT = pyaudio.paInt16
     CHANNELS = 1
     RATE = 44100
 
-    
     # instantiating the PyAudio instance
     p = pyaudio.PyAudio()
 
@@ -51,7 +53,8 @@ def record_stream(duration: int=10, output_file: typing.Any=None) -> typing.Any:
 
     # Create a temporary WAV file
     if output_file is None:
-        with tempfile.NamedTemporaryFile(suffix=".wav", delete=False) as tmpfile:
+        with tempfile.NamedTemporaryFile(suffix=".wav",
+                                         delete=False) as tmpfile:
             output_file = tmpfile.name
             wf = wave.open(output_file, 'wb')
     else:
@@ -65,6 +68,7 @@ def record_stream(duration: int=10, output_file: typing.Any=None) -> typing.Any:
     wf.close()
 
     return output_file
+
 
 if __name__ == "___main___":
     wav = record_stream(5)
