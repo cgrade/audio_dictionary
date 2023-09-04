@@ -40,6 +40,7 @@ def generate_response(prompt: str) -> str:
     )
     return response.choices[0].text.strip()
 
+
 response = generate_response(prompts)
 print(prompts)
 print(response)
