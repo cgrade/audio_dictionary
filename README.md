@@ -1,1 +1,4 @@
-# An application that uses speech to text and feed the text to chat GPT  as prompts.
+# Audio Dictionary How To.
+
+## Step 1
+clone this repository
