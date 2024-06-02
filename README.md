@@ -11,3 +11,8 @@ install requirements.txt with `pip install -r requirements.txt`
 
 ### Get API keys from OpenAI completion API and Deepgram API
 Replace the keys with the appropriate keys
+
+
+## Live DEMO
+
+https://youtu.be/yd5b36LVy_g?si=ZWh2ofSlOMNdnAbm
